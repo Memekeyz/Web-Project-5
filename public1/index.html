@@ -1,0 +1,25 @@
+<!-- Author: Ryan Hong -->
+<!-- Introduction to Web Development: Project 4-->
+<!-- Babylon GLB -->
+<!DOCTYPE html>  <!-- Tells the browser this document uses the HTML5 standard -->
+<html>           <!-- Root element that contains the entire web page -->
+
+<head>           <!-- Contains metadata and links to external resources -->
+    <title>Babylon.js GLB Loader</title>     <!-- Text displayed in the browser tab -->
+    <link rel="stylesheet" href="babylonJS_glb.css"> <!-- Loads the external CSS stylesheet -->
+</head>
+
+<!-- Contains all visible content displayed on the page -->
+<body>    
+    <h1>Ryan Hong BabylonJS glb Loader<h1>
+    <!-- File picker that allows users to select GLB 3D model files -->  
+    <input type="file" id="glbFileInput" accept=".glb"> 
+    <canvas id="renderCanvas"></canvas>     <!-- Canvas where BabylonJS renders the 3D scene -->
+
+    <!-- Loads the BabylonJS core engine library -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <!-- Loads BabylonJS file loaders including support for GLB files -->
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="babylonJS_glb.js"></script>  <!-- Loads the application's JavaScript code -->
+</body>
+</html>
